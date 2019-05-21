@@ -1,4 +1,4 @@
-[["java:package:com.zgd.ice"]]  //父包结构
+[["java:package:cn.segema.learn.ice.hello"]]  //父包结构
 module service{     //包名        具体生成的包为: 父包结构 + 包名      
 
     interface HelloService{ //接口名  不能用Ice作为接口名的开头

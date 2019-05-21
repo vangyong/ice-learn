@@ -3,11 +3,28 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>cn.segema.learn</groupId>
-	<artifactId>ice-test</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>ice-learn</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>ice-hello</module>
+		<module>ice-fileserver</module>
+		<module>ice-client</module>
+	</modules>
+
+	<properties>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+	</properties>
+
+
 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/com.zeroc/ice -->
+
 		<dependency>
 			<groupId>com.zeroc</groupId>
 			<artifactId>ice</artifactId>
