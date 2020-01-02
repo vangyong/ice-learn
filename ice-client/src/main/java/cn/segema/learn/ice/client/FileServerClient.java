@@ -37,6 +37,7 @@ public class FileServerClient {
         FileInfoHolder fileinfo= new FileInfoHolder();
         
        boolean readFileInfoResult = fileReadServerPrx.ReadFileInfo("5BAB238800000000001FEFF2", fileinfo);
+       System.out.println(fileinfo.value.filename);
         
         byte[] buff = new byte[1048516];
         BytesHolder readbuffer = new BytesHolder(buff);

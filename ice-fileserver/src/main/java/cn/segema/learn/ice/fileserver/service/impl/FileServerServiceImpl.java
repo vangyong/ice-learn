@@ -21,11 +21,11 @@ public class FileServerServiceImpl extends _FileServerDisp{
 		public boolean ReadFileInfo(String fileid, FileInfoHolder fileinfo, Current __current) {
 			//測試文件信息
 			try {
-				String filename ="E:\\test\\Test2.dll";
+				String filename ="E:\\test\\中文文件.txt";
 				InputStream inputStream = new FileInputStream(filename);
 				FileInfo fileInfo = new FileInfo();
 				Long fileLength = new File(filename).length();
-				fileInfo.filename = "Test2.dll";
+				fileInfo.filename = "中文文件.txt";
 				fileInfo.filesize= fileLength.intValue();
 				fileinfo.value =fileInfo;
 				
@@ -38,7 +38,7 @@ public class FileServerServiceImpl extends _FileServerDisp{
 		@Override
 		public int ReadFile(String fileid, BytesHolder readbuffer, Current __current) {
 			try {
-				String filename ="E:\\test\\Test2.dll";
+				String filename ="E:\\test\\中文文件.txt";
 				 FileInputStream fis = new FileInputStream(filename);
 				 byte[] buff = new byte[1048516];
 	             int len;
